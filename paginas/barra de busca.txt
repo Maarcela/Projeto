@@ -1,0 +1,110 @@
+  <!--<div class="busca">
+                    <div class="iconBusca">
+                        <i class='bx bx-search-alt busca-arrow'></i>
+                    </div>
+                    <div class="input">
+                        <input type="text" placeholder="Buscar" id="minhaBusca">
+                    </div>
+                    <span class="clear"></span>
+                </div>-->
+
+
+/*Campo de busca*/
+.busca{
+    position: relative;
+    width: 340px;
+    height: 40px;
+    background-color: white;
+    border-radius: 40px;
+    transition: 0.5s;
+    box-shadow: 0 0 0 5px #f14c54;
+    margin-top: 15px;
+    margin-left: 100px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+.iconBusca{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.busca-arrow{
+    color:#F2545B;
+    font-size: 25px;
+}
+.busca .input{
+    position: relative;
+    width: 280px;
+    height: 40px;
+    left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.busca .input input{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.navbar .bx-menu, 
+.nav-links .logo-sidebar,
+.nav-links .sidebar-logo .close-arrow{
+    display: none;
+}
+/* Responsividade Menu Topo*/
+
+@media (max-width:954px){
+
+}
+
+@media (max-width:815px){
+    
+}
+
+
+
+.logo{
+    float: left;
+    margin: 25px 20px 0 20px;
+    background-color: peru;
+}
+.linksClick{
+    float: left;
+    margin-top: 30px;
+    margin-left: 200px;
+    background-color: pink;
+}
+.busca{
+    float: right;
+    background-color: purple;
+    margin-top: 25px;
+    margin-right: 50px;
+}
+
+ <a href="#"><img src="imagens/logo/logo-branco-menor.png"></a>
+                    <ul class="linksClick">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">SOBRE NÓS</a></li>
+                        <li><a class="dropdown-menu" href="#">PRODUTOS</a>
+                            <ul class="subMenu">
+                                <li><a href="#">Camisetas</a></li>
+                                <li><a href="#">Calças</a></li>
+                                <li><a href="#">Moletons</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">CONTATO</a></li>
+                    </ul>
+
+                    <nav class="mainMenu" id="menu">

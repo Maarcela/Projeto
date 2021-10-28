@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeC</title>
+    <!--Link do CSS-->
+    <link rel="stylesheet" href="style/index.css">
+    <!--Box Icons Font CDN LINK-->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!--INICIO MENU HTML-->
+    <header>
+        <!--Login, sacola de compras e favoritos -->
+        <div class="menuAcesso">
+            <div class="logCad">
+                <a href="#" class="btnlogCad">LOGIN/CADASTRO</a>
+            </div>
+            <div class="compras">
+                <a class="carrinho" href="#"><i class='bx bxs-shopping-bag-alt arrowCompras'></i><!--<img src="#">--></a>
+                <a class="favoritos" href="#"><i class='bx bxs-heart arrowCompras' ></i><!--<img src="#">--></a>
+            </div>
+        </div>
+
+        <!--Logo, menu de navegação e barra de busca -->
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="imagens/logo/logo-branco-menor.png"></a>
+            </div>
+            <div class="menuBtn">
+                <div class="menuLinks">
+                    <ul>
+                        <li class="menuLink"><a href="#">HOME</a></li>
+                        <li class="menuLink"><a href="#">SOBRE NÓS</a></li>
+                        <li class="menuLink">
+                            <a href="#">PRODUTOS<i class='bx bxs-down-arrow' ></i></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li class="dropdownLink"><a href="#">Camisetas</a></li>
+                                    <li class="dropdownLink"><a href="#">Calças</a></li>
+                                    <li class="dropdownLink"><a href="#">Moletons</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menuLink"><a href="#">CONTATO</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--FIM MENU HTML-->
+    </header>
+    
+    <!--Link do arquivo JavaScript-->
+    <script type="text/javascript" src="js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+</body>
+</html>
