@@ -13,22 +13,21 @@ body{
     font-family: poppins;
 }
 
-/*INICIO MENU HTML*/
+/*INICIO MENU CSS*/
 
-/*Login, sacola de compras e favoritos*/
+/*Login, sacola de compras, favoritos e perfil*/
 
 .menu{
-    height: 100px;
     width: 100%;
 }
 .acessos{
     background-color: #FFBC42;
     padding: 7px;
 }
+        /*Login*/
 .logCadBtn{
     color: white;
     text-decoration: none;
-
     font-size: 17px;
     padding: 2px 5px 2px 5px;
     text-transform: uppercase;
@@ -40,6 +39,7 @@ body{
     border-radius: 7px;
     text-decoration: none;
 }
+        /*Sacoala, favoritos, perfil*/
 .arrowCompras{
     padding-top: -10px;
     font-size: 30px;
@@ -54,36 +54,75 @@ body{
     border-radius: 50px;
 }
 
-nav{
+/*logo, menu de navegação e barra de busca*/
+
+/*logo*/
+.logo {
+    margin-left: 30px;
+    float: left;
+}
+.imgLogo:hover{
+    background-color: transparent;
+}
+
+/*menu de navegação*/
+.mainMenu{
     background-color: #F2545B;
-    height: 80px;
     width: 100%;
+    padding: 10px;
 }
 
-nav ul{
-    float: right;
+.mainMenu ul{
     margin-left: 20px;
+    list-style-type: none;
 }
 
-nav ul li{
-    display: inline-block;
-    line-height: 80px;
+.mainMenu ul li{
+    display: inline;
+    position: relative;
     margin: 0 5px;
 }
-
-nav ul li a{
+.mainMenu ul li a{
     color: #fff;
     font-size: 16px;
     padding: 7px 13px;
+    text-decoration: none;
+    display: inline-block;
+}
+.mainMenu ul li a:hover{
+    transform: scale(1.1);
+}
+
+/* Sub menu*/
+.mainMenu ul ul{
+    margin: 0;
+    left: 0;
+    position: absolute;
+    background-color:#F2545B;
+}
+.mainMenu ul ul{
+    left: 0;
+    display: none;;
+    position: absolute;
     border-radius: 5px;
 }
 
-a.active, a:hover{
-    transform: scale(1.1);
-    background-color: #ee3e46;
-    transition: .5s;
+.mainMenu ul li:hover ul{
+    display: block;
+}
+.mainMenu ul ul{
+    width: 130px;
 }
 
+.mainMenu ul ul li a{
+    padding: 10px;
+}
+.mainMenu ul ul li a:hover{
+    transform: scale(1.1);
+}
+.closebtn{
+    display: none;
+}
 .checkBtn{
     font-size: 40px;
     color: white;
@@ -102,7 +141,7 @@ a.active, a:hover{
         font-size: 30px;
         padding-left:50px;
     }
-    nav ul li a{
+    .mainMenu ul li a{
         font-size: 15px;
     }
 }
@@ -111,6 +150,7 @@ a.active, a:hover{
     .checkBtn{
         display: block;
     }
+
     ul{
         position: fixed;
         width: 100%;
@@ -121,12 +161,12 @@ a.active, a:hover{
         text-align: left;
         transition: all .5s;
     }
-    nav ul li{
+    .mainMenu ul li{
         display: block;
         margin: 50px 0;
         line-height: 30px;
     }
-    nav ul li a{
+    .mainMenu ul li a{
         font-size: 20px;
         color: black;
     }
@@ -134,6 +174,10 @@ a.active, a:hover{
         background-color: none;
         color: #F2545B;
     }
+    #check ~ ul{
+        left: 0;
+    }
+
     #check:checked ~ ul{
         left: 0;
     }

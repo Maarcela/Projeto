@@ -1,14 +1,14 @@
 // INICIO MENU JS
-function abreMenu() {
+function openNav() {
+    document.getElementById("navMenu").style.left = "0";
+    document.getElementById("navMenu").style.width = "250px";
 
-    var menu = document.getElementById('menu-nav');
-
-    if (menu.classList.contains('mostrar')) {
-        menu.classList.remove('mostrar');
-    } else {
-        menu.classList.add('mostrar');
-    }
-}
+  }
+  
+  function closeNav() {
+    document.getElementById("navMenu").style.left = "-100%";
+    document.getElementById("navMenu").style.width = "0";
+  }
 
 // FIM MENU JS
 
