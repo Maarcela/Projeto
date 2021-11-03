@@ -115,16 +115,26 @@ header{
     top: 100%;
     left: 0;
     width: 10rem;
+    transform: translateY(10px);
+    opacity: 0;
+    pointer-events: none;
+    transition: .5s;
 }
 .dropdownLink > a{
     display: flex;
     background-color: #F2545B;
     color: #fff;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.329);
+    border-bottom: 1px solid #ffffff54;
     padding: .5rem 1rem;
     font-size: 16px;
     align-items: center;
     justify-content: space-between;
+}
+.dropdownLink:hover > a{
+    background-color: #f1434c;
+}
+.dropdownLink:not(:nth-las-child(2)){
+    border-bottom: 1px  solid #ffffff54;
 }
 .dropdown i{
     transform: rotate(-90deg);
@@ -134,5 +144,22 @@ header{
     width: 11px;
     height: 11px;
     top: -5.5px;
+    left: 32px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    transition: .3s;
+    z-index: -1;
+}
+.dropdownLink:fist-child:hover ~ .arrow{
+    background-color: #F2545B;
+}
+.dropdownLink{
+    position: relative;
+}
+.menuLinks:hover > .dropdown,
+.dropdownLink:hover > .dropdown{
+    transform: translate(0,0);
+    opacity: 1;
+    pointer-events: auto;
 }
 /* FIM MENU CSS */
