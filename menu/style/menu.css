@@ -69,6 +69,10 @@ body{
 }
 
 /*menu de navegação*/
+.nav{
+    margin-left: 400px;
+    margin-top: 10px;
+}
 .mainMenu{
     background-color: #F2545B;
     width: 100%;
