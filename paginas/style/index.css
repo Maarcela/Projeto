@@ -515,11 +515,14 @@ body{
     background-color: #F2F2F2;
 }
 .facaImg{
-    background-color: aquamarine;
+    margin: 40px 0 20px 0;
+    text-align: center;
+    justify-content: center;
+
 }
 .facaText{
-    background-color: rgb(182, 65, 65);
     margin-top: 10%;
+    font-weight: bold;
 }
 .facaBtn{
     float: right;
@@ -534,8 +537,45 @@ body{
 
 /*Newsletter*/
 .newsletter{
-    background-color: antiquewhite;
+    text-align: center;
+    justify-content: center;
 }
+.newsCamp{
+    width: 400px;
+    height: 50px;
+    border: 1px solid #031D44;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.newsNome{
+    border-radius: 10px 0 0 10px;
+}
+.newsEmail{
+    border: 1px solid #031D44;
+}
+.newsButton{
+    background-color: #247BA0;
+    border: none;
+    padding: 11px 10px 11px 10px;
+    font-size: 18px;
+    color: white;
+    border-radius: 0 10px 10px 0;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.newsButton:hover{
+    background-color: #031D44;
+    cursor: pointer;
+}
+
+
+/*Footer*/
+.imgLogoFooter{
+    margin: 15px 0 0 30px;
+}
+
 
 /*Responsividade do corpo da página*/
 @media (max-width:952px){

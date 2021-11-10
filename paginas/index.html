@@ -386,31 +386,53 @@
     <!--Faça você mesmo-->
     <section>
         <div class="facaVCMesmo row mr-0">
-            <div class="facaImg col-sm-6 float-start">
+            <div class="facaImg col-sm-7 float-start">
                 <img src="https://cdn-0.imagensemoldes.com.br/wp-content/uploads/2020/07/Quadrado-PNG.png" height="350px" width="x">
             </div>
-            <div class="facaText col-sm-6">
+            <div class="facaText col-sm-5">
                 <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quasi totam! Necessitatibus vitae optio in totam, facilis laboriosam quo mollitia, assumenda itaque ea, delectus deleniti dolores praesentium dicta similique quibusdam?</p>
                 <button class="facaBtn">Saiba mais! </button>
             </div>
         </div>
     </section>
-    <br><br>
+
+    <br><br><br><br>
+
     <section>
         <div class="newsletter row mr-0">
-            <div class="newsCampo col-6">
-                <form class="newsCamp"></form>
-            </div>
-            <div class="newsBtn col-6">
-                <button class="newsButton">Assinar</button>
+            <h1 class="titulo tituNews">se inscreva em nossa newsletter</h1>
+            <div class="col-12">
+                <form action="" id="newsletter" method="get" name="newsletter" onsubmit="validar()">
+                    <input type="text" id="nome" name="nome" required name=nome placeholder="Nome" class="newsNome newsCamp">
+                    <input type="text" id="email" name="email" required name=email placeholder="E-mail" class="newsEmail newsCamp">
+                    <input type="submit" value="inscrever-se" class="newsButton">
+                </form>
             </div>
         </div>
     </section>
 
+    <br><br><br>
+
     <footer>
         <div class="rodape row mr-0" style="background-color: rgb(90, 5, 47);">
-            <div class="logoFooter col-sm-3" style="background-color: rgb(255, 0, 55);">Logo</div>
-            <div class="menuFooter col-sm-3" style="background-color: blanchedalmond;">Menu Footer</div>
+            <div class="logoFooter col-sm-3">
+                <label><a class="imgLogoFooter" href="#"><img src="imagens/logo/logo-branco.png" width="200px"></a></label>
+            </div>
+            <div class="menuFooter col-sm-3" style="background-color: blanchedalmond;">
+                <ul class="footerMenu"> 
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Produtos</a>
+                        <ul class="dropFooterMenu">
+                            <li class="dropFooterItem"><a href="#">Camisetas</a></li>
+                            <li class="dropFooterItem"><a href="#">Calças</a></li>
+                            <li class="dropFooterItem"><a href="#">Moletons</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Home</a></li>
+                </ul>
+
+            </div>
             <div class="ajudaFooter col-sm-3" style="background-color: rgb(199, 133, 34);">Ajuda </div>
             <div class="acessoFooter col-sm-3" style="background-color: rgb(4, 58, 160);">Acessos Footer</div>
             <a href="https://icons8.com/icon/7985/cofrinho">Cofrinho icon by Icons8</a>
@@ -435,29 +457,36 @@
                     $(this).addClass("active").siblings().removeClass("active");
                 });
 
-                            // Carousel de mais vendidos
-            var slideBtn = document.getElementsByClassName('slideBtn');
-            var slideItem = document.getElementsByClassName('carouselItem');
-            var l = 0;
+                // Carousel de mais vendidos
+                console.clear()
+                var slideBtn = document.getElementsByClassName('slideBtn');
+                var slideItem = document.getElementsByClassName('carouselItem');
+                var l = 0;
 
-            slideBtn[1].onclick = ()=>{
-                l++;
-                for(var i of slideItem){
-                    if (l==0) {i.style.left = "0px";}
-                    if (l==1) {i.style.left = "-1200px";}
-                    if (l==2) {i.style.left = "-2400px";}
-                    if (l>3){l=3;}
+                slideBtn[1].onclick = ()=>{
+                    l++;
+                    for(var i of slideItem){
+                        if (l==0) {i.style.left = "0px";}
+                        if (l==1) {i.style.left = "-1200px";}
+                        if (l==2) {i.style.left = "-2400px";}
+                        if (l>3){l=3;}
+                    }
                 }
-            }
-            slideBtn[0].onclick = ()=>{
-                l--;
-                for(var i of slideItem){
-                    if (l==0) {i.style.left = "0px";}
-                    if (l==1) {i.style.left = "-1200px";}
-                    if (l==2) {i.style.left = "-2400px";}
-                    if (l<0){l=0;}
+                slideBtn[0].onclick = ()=>{
+                    l--;
+                    for(var i of slideItem){
+                        if (l==0) {i.style.left = "0px";}
+                        if (l==1) {i.style.left = "-1200px";}
+                        if (l==2) {i.style.left = "-2400px";}
+                        if (l<0){l=0;}
+                    }
                 }
-            }
+
+                //Validação do campo Newsletter
+                console.clear()
+                function validar(){
+                    alert('Ficamos muito felizes por você fazer parte da nossa comunidade!')
+                }
 
 
                 
