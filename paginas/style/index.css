@@ -572,8 +572,119 @@ body{
 
 
 /*Footer*/
+.rodape{
+    background-color: #ee6269;
+}
+/*Logo*/
 .imgLogoFooter{
-    margin: 15px 0 0 30px;
+    margin: 30px 0 0 30px;
+}
+/*Menu Footer*/
+.menuFooter {
+    justify-content: center;
+    margin: 30px 0 0 0;
+}
+.footerMenu li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;   
+}
+.footerMenu li a:hover{
+    transform: scale(1.1);
+}
+.itemFooterMenu{
+    text-transform: uppercase;
+}
+.dropFooterMenu{
+    margin-left: 20px;
+    text-transform: none;
+}
+
+/*Ajuda Footer*/
+.footerAjuda{
+    margin: 30px 0 0 0;
+}
+.ajudaFooter{
+    color: white;
+    font-weight: 600;
+}
+.itemAjudaFooter  a{
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+}
+.ajudaFooter a:hover{
+    text-decoration: none;
+    color: white;
+}
+.subitemAjudaFooter a{
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    margin-left:20px ;
+}
+.subitemAjudaFooter a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+/*Login Cadastro Footer*/
+.acessoFooter{
+    margin: 30px 0 0 0;
+    text-align: left;
+}
+.logCadFooter{
+    text-transform: uppercase;
+    color:#fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+.logCadFooter:hover{
+    text-decoration: none;
+    color:#fff;
+}
+.midias{
+    margin: 15px 0 0 40px;
+
+}
+.midiasSociais{
+    color: white;
+    font-size: 30px;
+    margin-left: 10px;
+}
+.copy{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-top: -32px;
+}
+.copyright{
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}
+.politicaUso{
+    color: white;
+    font-size: 13px;
+    margin-top: 100%;
+}
+.politicaUso a{
+    color: white;
+    font-size: 13px;
+}
+.politicaUso a:hover{
+    color: rgb(233, 233, 233);
+    text-decoration: none;
+}
+.pagamentos{
+    
+}
+.pag{
+    color: rgb(177, 40, 16);
+    font-size: 70px;
 }
 
 

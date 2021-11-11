@@ -414,90 +414,68 @@
     <br><br><br>
 
     <footer>
-        <div class="rodape row mr-0" style="background-color: rgb(90, 5, 47);">
+        <div class="rodape row mr-0">
             <div class="logoFooter col-sm-3">
-                <label><a class="imgLogoFooter" href="#"><img src="imagens/logo/logo-branco.png" width="200px"></a></label>
+                <label class="imgLogoFooter"><a href="#"><img src="imagens/logo/logo-branco.png" width="200px"></a></label>
             </div>
-            <div class="menuFooter col-sm-3" style="background-color: blanchedalmond;">
+            <div class="menuFooter col-sm-3">
                 <ul class="footerMenu"> 
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Sobre nós</a></li>
-                    <li><a href="#">Produtos</a>
+                    <li class="itemFooterMenu"><a href="#">Home</a></li>
+                    <li class="itemFooterMenu"><a href="#">Sobre nós</a></li>
+                    <li class="itemFooterMenu"><a href="#">Produtos</a>
                         <ul class="dropFooterMenu">
                             <li class="dropFooterItem"><a href="#">Camisetas</a></li>
                             <li class="dropFooterItem"><a href="#">Calças</a></li>
                             <li class="dropFooterItem"><a href="#">Moletons</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Home</a></li>
+                    <li class="itemFooterMenu"><a href="#">Contato</a></li>
                 </ul>
 
             </div>
-            <div class="ajudaFooter col-sm-3" style="background-color: rgb(199, 133, 34);">Ajuda </div>
-            <div class="acessoFooter col-sm-3" style="background-color: rgb(4, 58, 160);">Acessos Footer</div>
-            <a href="https://icons8.com/icon/7985/cofrinho">Cofrinho icon by Icons8</a>
+            <div class="footerAjuda col-sm-3">
+                <ul class="ajudaFooter">
+                    <li class="itemAjudaFooter"><a href="#">AJUDA</a></li>
+                    <li class="subitemAjudaFooter"><a href="#">Como funciona</a></li>
+                    <li class="subitemAjudaFooter"><a href="#">Segurança</a></li>
+                    <li class="subitemAjudaFooter"><a href="#">Sua conta</a></li>
+                    <li class="subitemAjudaFooter"><a href="#">Privacidade</a></li>
+                    <li class="subitemAjudaFooter"><a href="#">Entrega</a></li>
+                    <li class="subitemAjudaFooter"><a href="#">Ver todas</a></li>
+                </ul>
+            </div>
+            <div class="acessoFooter col-sm-3 float-end">
+                <a href="#" class="logCadFooter">login/cadastro</a>
+
+                <div class="midias">
+                    <a href="#"><i class="fab fa-facebook midiasSociais"></i></a>
+                    <a href="#"><i class="fab fa-instagram midiasSociais"></i></a>
+                    <a href="#"><i class="fab fa-linkedin midiasSociais"></i></a>
+                    <div class="politica">
+                        <p class="politicaUso">Veja nosssa <strong><a href="#">Política de Uso</a></strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="copy">
+                <p class="copyright">Copyrigh - Este site foi criado para um projeto de TCC</p>
+            </div>
         </div>
+        <div class="pagamentos">
+            <i class="fas fa-credit-card credito pag"></i>
+            <i class="fas fa-credit-card debito pag"></i>
+            <i class="fas fa-credit-card boleto pag"></i>
+            <i class="fas fa-credit-card pix pag"></i>
+        </div>
+
     </footer>
     <!------------------FIM DO CORPO DA PÁGINA EM HTML--> 
     
-    <!--CÓDIGOS EM JAVASCRIPT NAS PÁGINAS-->
-            <script>
-                //JS do meu Menu
-                $('.hamburguer').click(function(){
-                    $(this).toggleClass("click");
-                    $('.mainMenu').toggleClass("show");
-                });
-    
-                $('.prodBtn').click(function(){
-                    $('.mainMenu ul .prod-show').toggleClass("show");
-                    $('.mainMenu ul .only').toggleClass("rotate");
-                });
-    
-                $('nav ul li').click(function(){
-                    $(this).addClass("active").siblings().removeClass("active");
-                });
 
-                // Carousel de mais vendidos
-                console.clear()
-                var slideBtn = document.getElementsByClassName('slideBtn');
-                var slideItem = document.getElementsByClassName('carouselItem');
-                var l = 0;
-
-                slideBtn[1].onclick = ()=>{
-                    l++;
-                    for(var i of slideItem){
-                        if (l==0) {i.style.left = "0px";}
-                        if (l==1) {i.style.left = "-1200px";}
-                        if (l==2) {i.style.left = "-2400px";}
-                        if (l>3){l=3;}
-                    }
-                }
-                slideBtn[0].onclick = ()=>{
-                    l--;
-                    for(var i of slideItem){
-                        if (l==0) {i.style.left = "0px";}
-                        if (l==1) {i.style.left = "-1200px";}
-                        if (l==2) {i.style.left = "-2400px";}
-                        if (l<0){l=0;}
-                    }
-                }
-
-                //Validação do campo Newsletter
-                console.clear()
-                function validar(){
-                    alert('Ficamos muito felizes por você fazer parte da nossa comunidade!')
-                }
-
-
-                
-            </script>
-
-
-        <!--Links JS-->
-        <script src="js/index.js" type="text/js"></script>
         <!--Links Bootstrap-->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <!--Links JS-->
+        <script src="js/index.js"></script>
     </body>
 </html>
