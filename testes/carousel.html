@@ -1,124 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
-        <!--Link do Bootstrap-->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <!--Box Icons Font CDN LINK-->
-        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-        <!--Font Waesome Font CDN LINK-->
-        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-        <!--Jquery-->
-        <script src = "https://code.jquery.com/jquery-3.5.1.js" ></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--Link do CSS-->
+        <link rel="stylesheet" href="carousel.css" />
+        <link rel="stylesheet" href="slider.css" />
+        <script src="jQuery.js"></script>
+        <script src="slider.js"></script>
     </head>
+        <!--Carousel --------------------->
+        <ul id="autoWidth" class="cs-hidden">
+            <!--Item 1-->
+            <li class="item-a">
+                <div class="box">
+                    <div class="slider">
+                        <img
+                            src="http://images.tcdn.com.br/img/img_prod/106971/camiseta_vermelha_1130_1_20191216172350.jpg"
+                            alt="1"
+                        />
+                        <div class="comprar">
+                            <a href="#" class="btnComprar">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="#">Lacoste</a>
+                            <span>Camiseta vermelha</span>
+                        </div>
+                        <a href="#" class="preco">R$75,00</a>
+                    </div>
+                </div>
+            </li>
 
-    <style>      
-        .carouselItens{
-            width: 100%;
-            height: 400px;
-            overflow: hidden;
-            position: relative;
-        }
-        .slideBtn{
-            position: absolute;
-            top:40%;
-            font-size: 40px;
-            color: salmon;
-            cursor: pointer;
-            left: 3%;
-            z-index: 1;
-        }
-        .slideBtn:nth-of-type(2){
-            left: 94%;
-            text-align: right;
-        }
-        .itemVendas{
-            width: 87%;
-            height: 300px;
-            background-color: sienna;
-            margin:10px auto;
-            display: flex;
-            justify-content: left;
-            overflow-x: auto;
-        }
-        .itemVendas::-webkit-scrollbar{
-            visibility: hidden;
-        }
-        .carouselItem{
-            min-width: 330px;
-            height: 200px;
-            position: relative;
-            left: 0;
-            text-align: center;
-            padding-top: 60px;
-            font-size: 100px;
-            margin: 10px 20px;
-            color: white;
-            background-color: slateblue;
-            transition:  0.5s;
-        }
-    </style>
-    <body>
-        <div class="carouselItens">
-            <span class="slideBtn"><i class='bx bxs-caret-left-circle'></i></span>
-            <span class="slideBtn"><i class='bx bxs-caret-right-circle'></i></span>
-            <div class="itemVendas">
-                <div class="carouselItem">01</div>
-                <div class="carouselItem">02</div>
-                <div class="carouselItem">03</div>
-                <div class="carouselItem">04</div>
-                <div class="carouselItem">05</div>
-                <div class="carouselItem">06</div>
-                <div class="carouselItem">07</div>
-                <div class="carouselItem">08</div>
-                <div class="carouselItem">09</div>
-                <div class="carouselItem">10</div>
-                <div class="carouselItem">11</div>
+            <!--Item 2-->
+            <li class="item-b">
+                <div class="box">
+                    <div class="slider">
+                        <img
+                            src="http://images.tcdn.com.br/img/img_prod/106971/camiseta_vermelha_1130_1_20191216172350.jpg"
+                            alt="1"
+                        />
+                        <div class="comprar">
+                            <a href="#" class="btnComprar">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="#">Lacoste</a>
+                            <span>Camiseta vermelha</span>
+                        </div>
+                        <a href="#" class="preco">R$75,00</a>
+                    </div>
+                </div>
+            </li>
+
+            <!--Item 3-->
+            <li class="item-c">
+                <div class="box">
+                    <div class="slider">
+                        <img
+                            src="http://images.tcdn.com.br/img/img_prod/106971/camiseta_vermelha_1130_1_20191216172350.jpg"
+                            alt="1"
+                        />
+                        <div class="comprar">
+                            <a href="#" class="btnComprar">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="#">Lacoste</a>
+                            <span>Camiseta vermelha</span>
+                        </div>
+                        <a href="#" class="preco">R$75,00</a>
+                    </div>
+                </div>
+            </li>
+
+            <!--Item 4-->
+            <li class="item-d">
+                <div class="box">
+                    <div class="slider">
+                        <img
+                            src="http://images.tcdn.com.br/img/img_prod/106971/camiseta_vermelha_1130_1_20191216172350.jpg"
+                            alt="1"
+                        />
+                        <div class="comprar">
+                            <a href="#" class="btnComprar">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="#">Lacoste</a>
+                            <span>Camiseta vermelha</span>
+                        </div>
+                        <a href="#" class="preco">R$75,00</a>
+                    </div>
+                </div>
+            </li>
+
+            <!--Item 5-->
+            <li class="item-e">
+                <div class="box">
+                    <div class="slider">
+                        <img
+                            src="http://images.tcdn.com.br/img/img_prod/106971/camiseta_vermelha_1130_1_20191216172350.jpg"
+                            alt="1"
+                        />
+                        <div class="comprar">
+                            <a href="#" class="btnComprar">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="#">Lacoste</a>
+                            <span>Camiseta vermelha</span>
+                        </div>
+                        <a href="#" class="preco">R$75,00</a>
+                    </div>
+                </div>
+            </li>
+
+            <!--Item 6-->
+            <li class="item-f">
+                <div class="box">
+                    <div class="slider">
+                        <img
+                            src="http://images.tcdn.com.br/img/img_prod/106971/camiseta_vermelha_1130_1_20191216172350.jpg"
+                            alt="1"
+                        />
+                        <div class="comprar">
+                            <a href="#" class="btnComprar">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="#">Lacoste</a>
+                            <span>Camiseta vermelha</span>
+                        </div>
+                        <a href="#" class="preco">R$75,00</a>
+                    </div>
+                </div>
+            </li>
+
+            <!--Item 7-->
+            <li class="item-g">
+                <div class="box">
+                    <div class="slider">
+                        <img
+                            src="http://images.tcdn.com.br/img/img_prod/106971/camiseta_vermelha_1130_1_20191216172350.jpg"
+                            alt="1"
+                        />
+                        <div class="comprar">
+                            <a href="#" class="btnComprar">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="#">Lacoste</a>
+                            <span>Camiseta vermelha</span>
+                        </div>
+                        <a href="#" class="preco">R$75,00</a>
+                    </div>
+                </div>
+            </li>
+
+            <!--Item 8-->
+            <li class="item-h">
+                <div class="box">
+                    <div class="slider">
+                        <img
+                            src="http://images.tcdn.com.br/img/img_prod/106971/camiseta_vermelha_1130_1_20191216172350.jpg"
+                            alt="1"
+                        />
+                        <div class="comprar">
+                            <a href="#" class="btnComprar">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="#">Lacoste</a>
+                            <span>Camiseta vermelha</span>
+                        </div>
+                        <a href="#" class="preco">R$75,00</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <div id="banner">
+            <input type="radio" name="banner" id="slide1" checked>
+            <input type="radio" name="banner" id="slide2" >
+            <input type="radio" name="banner" id="slide3">
+            <div id="banners">
+                <div id="overflow">
+                    <div class="inner">
+                        <!--Imagem 1 do Banner-->
+                        <div class="Banner banner_1">
+                            <div class="banner-content">
+                                <h2>Slide 1</h2>
+                                <p>Elementos do slide 1</p>
+                            </div>
+                        </div>
+                        <!--Imagem 2 do Banner-->
+                        <div class="Banner banner_2">
+                            <div class="banner-content">
+                                <h2>Slide 2</h2>
+                                <p>Elementos do slide 2</p>
+                            </div>
+                        </div>
+                        <!--Imagem 3 do Banner-->
+                        <div class="Banner banner_3">
+                            <div class="banner-content">
+                                <h2>Slide 3</h2>
+                                <p>Elementos do slide 3</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="controles">
+                <label for="slide1"></i></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+            </div>
+            <div id="marcadores">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
             </div>
         </div>
 
-
-
-        <script>
-            // Carousel de mais vendidos
-            var slideBtn = document.getElementsByClassName('slideBtn');
-            var slideItem = document.getElementsByClassName('carouselItem');
-            var l = 0;
-
-            slideBtn[1].onclick = ()=>{
-                l++;
-                for(var i of slideItem){
-                    if (l==0) {i.style.left = "0px";}
-                    if (l==1) {i.style.left = "-740px";}
-                    if (l==2) {i.style.left = "-1480px";}
-                    if (l==3) {i.style.left = "-2280px";}
-                    if (l==4) {i.style.left = "-2960px";}
-                    if (l>3){l=4;}
-                }
-            }
-            slideBtn[0].onclick = ()=>{
-                l--;
-                for(var i of slideItem){
-                    if (l==0) {i.style.left = "0px";}
-                    if (l==1) {i.style.left = "-740px";}
-                    if (l==2) {i.style.left = "-1480px";}
-                    if (l==3) {i.style.left = "-2280px";}
-                    if (l<0){l=0;}
-                }
-            }
-
-        </script>
-
         <!--Links JS-->
-        <script src="js/index.js" type="text/js"></script>
-        <!--Links Bootstrap-->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="carousel.js"></script>   
+
     </body>
 </html>
