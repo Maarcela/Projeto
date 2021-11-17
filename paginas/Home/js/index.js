@@ -15,29 +15,15 @@ $('nav ul li').click(function(){
 
 
 // Carousel de mais vendidos
-console.clear()
-var slideBtn = document.getElementsByClassName('slideBtn');
-var slideItem = document.getElementsByClassName('carouselItem');
-var l = 0;
-
-slideBtn[1].onclick = ()=>{
-    l++;
-    for(var i of slideItem){
-        if (l==0) {i.style.left = "0px";}
-        if (l==1) {i.style.left = "-90%";}
-        if (l==2) {i.style.left = "-190%";}
-        if (l>3){l=3;}
-    }
-}
-slideBtn[0].onclick = ()=>{
-    l--;
-    for(var i of slideItem){
-        if (l==0) {i.style.left = "0px";}
-        if (l==1) {i.style.left = "-1200px";}
-        if (l==2) {i.style.left = "-2400px";}
-        if (l<0){l=0;}
-    }
-}
+$(document).ready(function() {
+    $('#autoWidth').lightSlider({
+        autoWidth:true,
+        loop:true,
+        onSliderLoad: function() {
+            $('#autoWidth').removeClass('cS-hidden');
+        } 
+    });  
+  });
 
 
 //Validação do campo Newsletter
