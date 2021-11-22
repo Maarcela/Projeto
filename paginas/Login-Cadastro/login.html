@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <!--Favicon da página-->
+        <link rel="shortcut icon" href="imagens/logo/favicon.png">
+        <!--Link do CSS-->
+        <link type="text/css" rel="stylesheet" href="style/login.css">
+        <!--Box Icons Font CDN LINK-->
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+        <!--Font Waesome Font CDN LINK-->
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    </head>
+    <body>
+
+        <section class="formularioLogin">
+            <!--Formulário de Login-->
+            <div class="login">
+                <!--Botões de Cadastro e Login-->
+                <div class="acessos">
+                    <a href="cadastro.html" class="cadastreSe btnLogCad">Cadastre-se</a>
+                    <a href="login.html" class="logar btnLogCad">Login</a>
+                </div>
+
+                <!--Campos do formulário-->    
+                <div class="formLog">
+                    <form action="../Home/index.html" method="get" id="login">
+                        <label for="email">E-mail:</label><br>
+                        <input type="email" id="email" name="email" required="required"><br><br>
+                        
+                        <label for="senha">Senha:</label><br>
+                        <input type="password" id="senha" name="senha" required="required"><br>
+                    </form>
+
+                    <!--Botões de Entrar e Cancelar-->
+                    <div class="entar-cancelar">
+                        <button type="submit" form="login" class="btnEntrar acessar" >Entrar</button>
+                        <a href="../Home/index.html" class="btnCancelar acessar">Cancelar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
