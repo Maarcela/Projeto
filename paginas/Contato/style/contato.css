@@ -319,3 +319,51 @@
 }
 
 /*--------------------FIM DO MENU EM CSS*/
+
+/*--------------------FORMULÁRIO DE CONTATO*/
+.contatoForm{
+    margin-top: 100px;
+}
+
+.contatoForm input, .contatoForm textarea{
+    height: 50px;
+    width: 90%;
+    padding: 5px 0 5px 10px;
+    margin:10px 0 30px 0;
+    font-size: 18px;
+    color: #031D44;
+    border: 1px solid #C4C4C4;
+    background-color: #F4F4F4 ;
+    border-radius: 7px;
+    outline: none;
+}
+
+.assunto input{
+    width: 95%
+}
+
+.contatoForm textarea{
+    height:200px;
+    width: 95%
+}
+
+.contatoForm input:hover, .contatoForm textarea:hover{
+    background-color: rgba(0, 0, 0, 0.075);
+    transition: all 0.3s;
+} 
+
+.contatoForm input:active, .contatoForm textarea:active{
+    background-color: white !important;
+    border: 2px solid #C4C4C4;
+}
+
+/*Responsividade do formulário de Contato*/
+@media (max-width:952px){
+    .contatoForm{
+        margin-left: 20px;
+    }
+    .contatoForm input, .contatoForm textarea{
+        width: 100%;
+    }
+    
+}
