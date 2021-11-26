@@ -91,7 +91,7 @@
 
     <!------------------FORMULÁRIO DE CONTATO-->
     <div class="contatoForm container">
-        <form action="">
+        <form action="contato.html" method="get" id="contato">
             <div class="fnameElname row mr-0">
                 <div class="nome col-md-6">
                     <label for="fName">Nome</label><br>
@@ -131,8 +131,11 @@
                     <textarea name="mensagem" id="mensagem" cols="100" rows="4" required placeholder="Estou com dúvidas sobre..." style="resize: none"></textarea>
                 </div>
             </div>
-            
         </form>
+
+        <div class="buttonForm">
+            <button onclick="agradecimentos()" class="btnEnviar" type="submit" form="contato">Enviar</button>
+        </div>
     </div>
 
         <!--Link do meu JS-->

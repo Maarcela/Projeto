@@ -326,10 +326,10 @@
 }
 
 .contatoForm input, .contatoForm textarea{
-    height: 50px;
+    height: 40px;
     width: 90%;
     padding: 5px 0 5px 10px;
-    margin:10px 0 30px 0;
+    margin:10px 0 20px 0;
     font-size: 18px;
     color: #031D44;
     border: 1px solid #C4C4C4;
@@ -347,6 +347,10 @@
     width: 95%
 }
 
+.btnEnviar{
+    text-align: center;
+}
+
 .contatoForm input:hover, .contatoForm textarea:hover{
     background-color: rgba(0, 0, 0, 0.075);
     transition: all 0.3s;
@@ -356,6 +360,30 @@
     background-color: white !important;
     border: 2px solid #C4C4C4;
 }
+
+.buttonForm{
+    text-align: center;
+}
+
+.btnEnviar{
+    background-color: #247BA0;
+    padding: 7px 80px 7px 80px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    border:none;
+    color:white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform:uppercase;
+}
+
+.btnEnviar:hover{
+    background-color: #1e5d79;
+    transition: all 0.3s;
+    
+}
+
 
 /*Responsividade do formulário de Contato*/
 @media (max-width:952px){

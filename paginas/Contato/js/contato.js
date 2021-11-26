@@ -64,5 +64,9 @@ $('nav ul li').click(function(){
     $(this).addClass("active").siblings().removeClass("active");
 });
 
+// Button do Formulário
+function agradecimentos(){
+    alert('Formulário enviado com sucesso!')
+ }
 
 
