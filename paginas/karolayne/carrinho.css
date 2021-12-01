@@ -1,0 +1,50 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.etapas{
+    background-color: burlywood;
+}
+.produto{
+    background-color: darkblue;
+}
+.endereco{
+    background-color: darkcyan;
+}
+.pagamento{
+    background-color: darkorange;
+}
+.FreteGratis{
+    background-color: darkslateblue;
+}
+.imgCarrinho{
+    background-color: darkturquoise;
+}
+.FotoFrete{
+    background-color: dimgray;
+}
+.infoProduto{
+    background-color: dodgerblue;
+}
+.tamanho{
+    background-color: greenyellow;
+}
+.quantidade{
+    background-color: honeydew;
+}
+.preco{
+    background-color: indianred;
+}
+.cupomdedesconto{
+    background-color: ivory;
+}
+.subtotal{
+    background-color: lavender;
+}
+.entrega{
+    background-color: lightcoral;
+}
+.total{
+    background-color: rgb(41, 194, 214);
+}

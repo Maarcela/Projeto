@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="x-UA-compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>ANIMEC</title>
+     <!--Link do CSS-->
+     <link rel="stylesheet" href="carrinho.css">
+     <!--Link do Bootstrap-->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+     <!--Box Icons Font CDN LINK-->
+     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+     <!--Font Waesome Font CDN LINK-->
+     <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+     <!--Jquery-->
+     <script src = "https://code.jquery.com/jquery-3.4.1.js" ></script>
+</head>
+
+<body>
+
+        <!--inicio do menu-->
+        
+        <!--corpo  da página-->
+        <div class="row etapas mr-0">
+                <div class="col-4 produto">
+                   <button>PRODUTO</button>
+                </div>
+                <div class="col-4 endereco"> 
+                  <button>ENDEREÇO </button>
+                </div>   
+                <div class="col-4 pagamento">
+                   <button>PAGAMENTO</button>
+                </div>  
+        </div>
+        <section>
+                <div class="FreteGratis row mr-0">
+                        <div class="anucioFrete col-12">
+                                <h3> aproveita Frete Gratis apartir de R$250,00 </h3>
+                        </div>
+                </div>
+                <div class="imgFrete row mr-0">
+                        <div class="imgCarrinho col-4">
+                        <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="FotoFrete col-8">
+                         imagem do Frete
+                        </div>
+                </div>
+
+        </section>
+        
+        
+        <section>
+         <div class="infoProduto row mr-0">
+                 <div class="peca col-md-3">
+                         <p><strong>Produto:</strong></p>
+                         <div class="infoProduto">
+                                 <img src="https://images-americanas.b2w.io/produtos/01/00/img/1703939/2/1703939268_1GG.jpg" alt="produto1" width="150px">
+                         </div>
+                         <div class="infoProduto">
+                                <img src="https://images-americanas.b2w.io/produtos/01/00/img/1703939/2/1703939268_1GG.jpg" alt="produto2" width="150px">
+                        </div>
+                 </div>
+                 <div class="tamanho col-md-3">
+                         <p><strong>Tamanho:</strong></p>
+                        <div class="infoTamanho>">
+                        <p>M</p>
+                        </div>
+                        <div class="infoTamanho>">
+                        <p>G</p>
+                        </div>
+                </div>
+                <div class="quantidade col-md-3">
+                         <P><strong>Quantidade:</strong></P>
+                         <form>
+                         <input type="number" name="quantidade" min="1" max="20">    
+                            </form>
+                </div>
+                <div class="preco col-md-3">
+                        <P><strong>Preço:</strong></P>
+                         <div class="infoPreco">
+                          <P> R$120,00</P>
+                         </div>
+                         <div class="infoPreco">
+                         <P> R$135,00</P>
+                        </div>
+                </div>
+
+         </div>       
+
+        </section>
+        
+        
+        <section>
+                <div class="cupomdedesconto">
+                        <form class="form-inline">
+                                <div class="form-group mb-2">
+                                  <label for="staticEmail2" class="sr-only">Cupom </label>
+                                  <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="Cupom de desconto">
+                                </div>
+                                <div class="form-group mx-sm-3 mb-2">
+                                  <label for="inputPassword2" class="sr-only">Cupom de desconto</label>
+                                  <input type="teste" class="form-control" id="inputPassword2" placeholder="Insira seu cupom">
+                                </div>
+                                <button type="submit" class="btn btn-primary mb-2">Inserir</button>
+                              </form>
+                </div>
+        </section>
+        
+        <section>
+                <div class="resumo row mr-0">
+                        <div class="subtotal col-md-6">
+                        <p><strong>Subtotal:</strong> R$255,00</p>
+                        
+                        </div>
+                </div>
+                <div class="entrega row mr-0">
+                        <div class="entrega col-md-6">
+                         <p><strong>Entrega:</strong></p>
+                        </div>
+                        <div class="calcular col-md-6">
+                         <form class="Calcular row mr-0">
+                                <div class="form-group mx-sm-3 mb-2">
+                                        <label for="inputPassword2" class="sr-only">Calcular</label>
+                                        <input type="teste" class="form-control" id="inputPassword2" placeholder="Calcular">
+                                      </div>
+                                      <button type="submit" class="btn btn-primary mb-2">Calcular</button>
+                        
+                         </form>
+                        </div>
+                </div>
+        
+                <div class="total row mr-0">
+                        <div class="campoTotal col-md-12">
+                                <p><strong>Total:</strong>R$255,00</p>
+                        
+                        </div>
+                </div>
+        </section>
+        
+        <section>
+        <div class="etapas row mr-0">
+                <div class="continComprando col-md-6"> <button><i class="fas fa-arrow-left"></i> Continuar comprando </button></div>
+
+                <div class="proximaEtapa col-md-6"> <button><i class="fas fa-arrow-right"></i> Proximo </button></div>
+        </div>
+        </section>
+        
+        
+        
+        <!--Links Bootstrap-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js
+    
+
+
+</body>
+      
+</html>
