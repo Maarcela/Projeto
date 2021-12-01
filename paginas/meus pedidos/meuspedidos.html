@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Link do CSS-->
+    <link type="text/css" rel="stylesheet" href="style/style.css">
+    <!--Link do Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--Box Icons Font CDN LINK-->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <!-------------------------INICIO DO MENU EM HTML-->
+    <div class="menu">
+
+        <!--Login, sacola de compras, favoritos e perfil-->
+        <div class="row acessos mr-0">
+            <div class="col-6 logCad">
+                <a href="#" class="logCadBtn">login/cadastro</a>
+            </div>
+            <div class="col-5 compras">
+                <a href="#" class="sacola"><i class='bx bxs-shopping-bag-alt arrowCompras'></i></a>
+                <a href="#" class="favoritos"><i class='bx bxs-heart arrowCompras'></i></a>
+                <a href="#" class="favoritos"><i class='bx bxs-user arrowCompras'></i></a>
+            </div>
+        </div>
+
+        <!--Logo, menu de navegação e barra de busca -->
+        <div id="navMenu row">
+            <!--Logo-->
+            <div class="logo">
+                <label><a class="imgLogo" href="#"><img src="imagens/logo/logo-branco-menor.png"></a></label>
+            </div>
+            <div class="hamburguer">
+                <span class="fas fa-bars"></span>
+            </div>
+            <!--menu de navegaçã -->
+            <nav class="mainMenu" id="sidebar">
+                <div class="nav">
+                    <ul class="links">
+                        <li class="active"><a href="#">HOME</a></li>
+                        <li><a href="#">SOBRE NÓS</a></li>
+                        <li>
+                            <a class="prodBtn" href="#">PRODUTOS
+                                <span class="fas fa-caret-down only"></span>
+                            </a>
+                            <ul class="prod-show">
+                                <li><a href="#">Camisetas</a></li>
+                                <li><a href="#">Calças</a></li>
+                                <li><a href="#">Moletons</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">CONTATO</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!--JS do meu Menu-->
+
+    <!-------------------------FIM DO MENU EM HTML-->
+    <section class="menusidebar">
+        <div class="sidebarperfil">
+            <div class="sidebar-menu">
+                <ul>
+                    <li>
+                        <a href="#" class="itemperfil"> Minha conta </a>
+                    </li>
+                    <li>
+                        <a href="#" class="itemperfil">Meus pedidos </a>
+                    </li>
+                    <li>
+                        <a href="#" class="itemperfil">Meus dados </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="Minhaconta row">
+            <div class="col-12">
+                <h2>
+                    Minha conta
+                </h2>
+            </div>
+        </div>
+        <div class="row meuacesso">
+            <div class="nomesenha col-md-6">
+                <p>
+                    <strong>
+                        Nome: 
+                    </strong>
+                    Arya Stark
+                </p>
+                <p>
+                    <strong>
+                        Senha:
+                    </strong>
+                    ******
+                </p>
+               </div>
+            
+            <div class="emailverificalcao col-md-6">
+                <p>
+                    <strong>
+                        E-mail:
+                    </strong>
+                </p>
+                <p>
+                    <strong>
+                        Verificação em duas etapas:
+                    </strong>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="pedidos">
+        <h2>Meus pedidos</h2>
+        <div class="meuspedidos row mr-0 linhaImpar">
+            <div class="imgproduto col-md-6">
+                <img src="https://img.elo7.com.br/product/original/122B342/camiseta-masculina-naruto-sasuke.jpg" alt="Camiseta do Naruto" height="230px"> 
+            </div>
+            <div class="infoproduto col-md-6"><p>
+                <strong> Produto: </strong>
+                Camiseta Naruto <br>
+                <strong>Código do Produto:</strong>
+                h8r301 <br>
+                <strong>Status do pedido:</strong>
+                Enviado <br>
+                <strong>Transportadora:</strong>
+                Correios 
+            </p></div>
+        </div>
+
+        <div class="meuspedidos row mr-0 linhaPar">
+            <div class="imgproduto col-md-6">
+                <img src="https://img.elo7.com.br/product/original/122B342/camiseta-masculina-naruto-sasuke.jpg" alt="Camiseta do Naruto" height="230px"> 
+            </div>
+            <div class="infoproduto col-md-6"><p>
+                <strong> Produto: </strong>
+                Camiseta Naruto <br>
+                <strong>Código do Produto:</strong>
+                h8r301 <br>
+                <strong>Status do pedido:</strong>
+                Enviado <br>
+                <strong>Transportadora:</strong>
+                Correios 
+            </p></div>
+        </div>
+
+        <div class="meuspedidos row mr-0 linhaImpar">
+            <div class="imgproduto col-md-6">
+                <img src="https://img.elo7.com.br/product/original/122B342/camiseta-masculina-naruto-sasuke.jpg" alt="Camiseta do Naruto" height="230px"> 
+            </div>
+            <div class="infoproduto col-md-6"><p>
+                <strong> Produto: </strong>
+                Camiseta Naruto <br>
+                <strong>Código do Produto:</strong>
+                h8r301 <br>
+                <strong>Status do pedido:</strong>
+                Enviado <br>
+                <strong>Transportadora:</strong>
+                Correios 
+            </p></div>
+        </div>
+
+    </section>
+    <section>
+        <div class="meusdados row">
+            <div class="infodados">
+                <h2>Meus dados</h2>
+                <p> <strong>
+                        Meus endereços:
+                    </strong>
+                    Av. Norte whinterfell, N 55, 12345-6 - São Paulo - SP </p>
+                <p> <strong>
+                        Cartões adicionados:
+                    </strong>
+                    ****-****-****-3545
+                </p>
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+    <!--Links Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!--Links do meu JS-->
+    <script src="JS/meuspedidos.js">
+
+    </script>
+</body>
+
+</html>
