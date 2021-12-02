@@ -1,25 +1,72 @@
 /*Google fonts CDN Link */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,500;1,700;1,800&family=Poppins:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,500;1,600;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,800;0,900;1,100;1,600;1,900&display=swap');
 *{
     padding: 0;
     margin: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-body{
-    font-family: 'Open Sans', sans-serif;
+/*--------------------INICIO DO MENU EM CSS*/
+.menu{
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    margin-bottom: 100ppx;
 }
-/*---------------------------INICIO DO MENU EM CSS*/
+/*Poup login*/
+.popbox {
+    display: none;
+    position: absolute;
+    z-index: 99999;
+    width: 300px;
+    padding: 10px;
+    margin: 20px 0 0 200px;
+    background: #ffffff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+    color: #080705;
+    font-weight: 600;
+}
+
+.popbox input{
+    height: 40px;
+    width: 100%;
+    padding: 5px 0 5px 10px;
+    margin:5px 0 30px 0;
+    font-size: 18px;
+    color: #031D44;
+    border: 1px solid #C4C4C4;
+    background-color: #F4F4F4 ;
+    border-radius: 7px;
+}
+.entar-cancelar{
+    text-align: center;
+    margin-top: 30px;
+}
+.acessar{
+    padding:10px 15px 10px 15px;
+    margin: -10px 15px 0 0;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform:uppercase ;
+    color:#F2545B;
+    font-size: 15px;
+    border-radius:7px;
+    border: none;
+    cursor: pointer;
+}
+.btnEntrar{
+    background-color: #F2545B;
+    color: white
+}
 
 /*Login, sacola de compras, favoritos e perfil*/
-.menu{
-    width: 100%;
-}
 .acessos{
     background-color: #FFBC42;
-    padding: 7px;
 }
 
         /*Login*/
@@ -72,6 +119,7 @@ body{
 .nav{
     margin-left: 400px;
     margin-top: 10px;
+    z-index: 11111;
 }
 .mainMenu{
     background-color: #F2545B;
@@ -107,7 +155,7 @@ body{
     background-color:#F2545B;
     display: none;
     border-radius: 5px;
-    width: 130px
+    width: 130px;
 } 
 .nav ul .prod-show.show{
     display: block;
@@ -146,11 +194,16 @@ body{
 }
 
 @media (max-width:858px) {
+    /*Poup de login*/
+    .popbox {
+        margin: 20px 0 0 90px;
+    }
+
 /*Configurações do menu hamburguer*/
     .hamburguer{
         display: block;
         position: absolute;
-        top:70px;
+        top:57px;
         right:20px;
         height: 45px;
         width: 45px;
@@ -184,6 +237,9 @@ body{
         margin-top:5px
     }
          /*Logo*/
+    .menu{
+        top: 0;
+    }
     .logo {
         float: right;
         width: 100%;
@@ -197,7 +253,10 @@ body{
         padding: 0 0 0 10px;
     }
 
-    /*menu de navegação*/
+    /*menu de navegaçã*/
+    .nav{
+        margin: 0;
+    }
     .mainMenu{
         position: fixed;
         right: -250px;
@@ -236,8 +295,6 @@ body{
         border-left: 2px solid #fff;
         border-radius: 7px;
     }
-
-    /* Sub menu*/
     .mainMenu ul ul{
         width: 100%;
         position: static;
@@ -267,13 +324,21 @@ body{
         border-left-color:transparent;
     }
 }
-/*---------------------------FIM DO MENU EM CSS*/
 
+/*--------------------FIM DO MENU EM CSS*/
 
-
-.row{
-    background-color: #F2545B;
-}
+/*--------------------INICIO DA PÁGINA EM CSS*/
 .peca{
-    background-color: #FFBC42;
+    background-color: #fff;
+    text-align: center;
+   
+
 }
+.peca img{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    
+}
+
+
+/*--------------------FIM DA PÁGINA EM CSS*/
