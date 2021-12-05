@@ -936,6 +936,7 @@
     color: white;
     font-size: 30px;
     padding: 8px;
+    border-radius: 30px;
 }
 .midiasSociais:hover{
     background-color: #fff;
