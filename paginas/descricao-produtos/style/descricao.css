@@ -1,0 +1,39 @@
+.imgInfo img{
+    border:1px solid #080705;
+    border-radius: 10px;
+    cursor: zoom-in;
+    width: auto;
+}
+
+.nomePeca h3, .nomePeca p{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.tamanhos a{
+    border-radius: 100%;
+    color: #fff;
+    background-color: #F2545B;
+    font-size: 20px;
+}
+.tamanhos .btn .P{
+    padding: 10px 18px 10px 18px;
+}
+
+.tamanhos .btn .M{
+    padding: 10px 15px 10px 15px;
+}
+
+.tamanhos .btn .G{
+    padding: 10px 15px 10px 15px;
+}
+.tamanhos .btn .GG{
+    padding: 10px 8px 10px 8px;
+}
+
+.tamanhos a:hover{
+    background-color: #031D44;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.5s;
+}
