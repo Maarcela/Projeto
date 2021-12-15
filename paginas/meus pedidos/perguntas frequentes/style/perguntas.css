@@ -1,15 +1,64 @@
-/*Google fonts CDN Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,100;1,300&display=swap');
-*{
+* {
     padding: 0;
     margin: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
 }
+body {
+    font-family: 'Poppins', sans-serif;
+}
 
+.sidebar-perguntas {
+     list-style: none; 
+    width: 400px;
+    float: left;
+    border: 1px solid #c4c4c4;
+    margin: 10px 15px 0px 15px;
+     padding: 1rem; 
+    padding-bottom: 8px solid #c4c4c4;  
+    height: 225vh;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, 
+        rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; 
+}
+.sidebar-perguntas ul li .itemperfil { 
+    text-decoration: none;
+    color: #080705;
+    font-size: 18px;
+    text-align: center;
+    margin: 1rem;
+    
+    
+} 
+.titulo {
+    font-size: 1.5rem;
+    text-align: center;
+}
 
-
-.itemperfil{
-    list-style: none;
+.text-dark {
+    color: #080705;
+    font-weight: 400;
+    margin: 1.5rem;
+    padding: 20px;
+}
+.footer nav-bar {
+    height: 145;
+    color: #ffbc42;
+    bottom: 5px;
+    position: fixed;
+    width: 90%;
+    text-align: center;
+}
+.footer {
+    color: #080705;
+    font-weight: 400;
+    padding: 5px;
+    text-align: left;
+  
+}
+.maça{
+    border-radius: 1rem;
+    text-align: left;
 }
